@@ -15,7 +15,7 @@ First of all, you'll use Node-Red to make this migration, and then it will be au
 
 ![image](https://github.com/nicolas-davila/Thingsboard-Migration/assets/123404361/452b037e-30e9-4a03-ad0c-46817e514b6a)
 
-- In the first function node, open the "firstFunction.js" file and adapt the code to your function. After, you can add another http node to GET the telemetry. The online address is http://monitordeenergia.ml/api/plugins/telemetry/DEVICE/d529f860-d14c-11ec-9e35-47187aca82e1/values/timeseries?keys=uarms&startTs=1699304451000&endTs=1699380279000&limit=50000&agg=NONE
+- In the first function node, open the "firstFunction.js" file and adapt the code to your function. After, you can add another http node to GET the telemetry. The online address is http://your-domain/api/plugins/telemetry/DEVICE/d529f860-d14c-11ec-9e35-47187aca82e1/values/timeseries?keys=uarms&startTs=1699304451000&endTs=1699380279000&limit=50000&agg=NONE
 
 ### Warning! After the "/DEVICE/" you'll put your device id, and the keys is the value you want to get, the startTs is the timestamps of when you'll start to get the value and the endTs is the time you want to stop get. Remember put three "0" after the timestamp. 
 
