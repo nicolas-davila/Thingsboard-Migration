@@ -20,8 +20,15 @@ First of all, you'll use Node-Red to make this migration, and then it will be au
 ### Warning! After the "/DEVICE/" you'll put your device id, and the keys is the value you want to get, the startTs is the timestamps of when you'll start to get the value and the endTs is the time you want to stop get. Remember put three "0" after the timestamp. 
 
  - Follow the image below:
+ - You have to put a code in the second function node. Open the "secondFunction.js" file and adapt it to your program.
+   
   ![image](https://github.com/nicolas-davila/Thingsboard-Migration/assets/123404361/11e74d90-8a7d-4bf8-a7b3-b3b97c8cb09c)
 
- - It's almost there! Now you have to add a trigger (named login) to make contact with the newest thingsboard version. Add and send the username and password, put the http node login. After you have to add the function
+ - It's almost there! Now you have to add a trigger (named login) to make contact with the newest thingsboard version. Add and send the username and password, put the http node login. After you have to add the function node and type some code. Open the "thirdFunction.js" file and adapt it to yours. Follow the image below:
 
-    
+![image](https://github.com/nicolas-davila/Thingsboard-Migration/assets/123404361/4100b84a-0933-4a60-9a7f-dae2af3d9465)
+
+Now you have the program running! The final project will be like this:
+
+
+![image](https://github.com/nicolas-davila/Thingsboard-Migration/assets/123404361/119f849c-be94-4910-9acf-6585b052584c)
